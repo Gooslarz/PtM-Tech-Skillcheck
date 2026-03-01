@@ -1,0 +1,14 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+UseFinished(_Player, PTM_TechSkillcheck_Button_c19e892e-b103-4cd3-a39c-1e8d1bb51a0a, 1)
+AND
+IsLocked(PTM_TechSkillcheck_Door_91e2f5fa-0be3-4f95-b23b-61c68a4965cb, 1)
+THEN
+PROC_ItemUnlockAndOpen(PTM_TechSkillcheck_Door_91e2f5fa-0be3-4f95-b23b-61c68a4965cb);
+EXITSECTION
+
+ENDEXITSECTION

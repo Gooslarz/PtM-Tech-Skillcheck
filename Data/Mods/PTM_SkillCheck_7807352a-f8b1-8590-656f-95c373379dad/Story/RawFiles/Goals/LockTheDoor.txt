@@ -1,0 +1,13 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+EnteredTrigger(_Player, PTM_Techskillcheck_LockDoorTrigger_22bb7a88-7fa1-40cd-925e-72f2a02724c8)
+THEN
+Lock(PTM_TechSkillcheck_Door_91e2f5fa-0be3-4f95-b23b-61c68a4965cb, "PTM_TechSkillcheck_DoorKey");
+TeleportToPosition(PTM_Techskillcheck_LockDoorTrigger_22bb7a88-7fa1-40cd-925e-72f2a02724c8, 100.0, 0.0, 100.0, "", 0, 0, 0, 0, 0);
+EXITSECTION
+
+ENDEXITSECTION

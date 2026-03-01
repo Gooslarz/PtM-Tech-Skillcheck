@@ -1,0 +1,12 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+IF
+FlagSet((FLAG)PTM_TechSkillcheck_GuardPersuasionSuccess_eea70133-a5b0-98a6-aa8b-f11e94f3917c, _speaker, _dialog)
+THEN
+PROC_ItemUnlockAndOpen(PTM_TechSkillcheck_Door_91e2f5fa-0be3-4f95-b23b-61c68a4965cb);
+EXITSECTION
+
+ENDEXITSECTION

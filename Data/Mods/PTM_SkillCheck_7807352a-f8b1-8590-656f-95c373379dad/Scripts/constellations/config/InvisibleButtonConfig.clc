@@ -1,0 +1,10 @@
+game.configs.InvisibleButtonConfig = Config{
+    root=StateRef{game.roots.DefaultTrap,
+        logic = StateRef{game.states.Perception,
+            DC = [[Act1_Easy]],
+            MinDistance = 10,
+            PerceptionSuccessAD = [[1]],
+            Type = [[Invisible]],
+        },
+    }
+}

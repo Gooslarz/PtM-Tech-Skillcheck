@@ -1,0 +1,9 @@
+new equipment "PTM_TechSkillcheck_GuardEQ"
+add initialweaponset "Melee"
+add equipmentgroup
+add equipment entry "ARM_Underwear_Dragonborn"
+add equipmentgroup
+add equipment entry "ARM_ScaleMail_Body_1"
+add equipmentgroup
+add equipment entry "MAG_BG_DragonsBreath_Glaive"
+
