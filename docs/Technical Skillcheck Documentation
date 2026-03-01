@@ -1,0 +1,20 @@
+ This is a documentation for the gameplay part of the technical skillcheck. 
+
+## Table of contents
+* Ways of getting into the tavern:
+	1.[Guard dialogue](#Guard%20dialogue)
+	2.[Pickpocketing](#Pickpocketing)
+	3.[Finding a secret button](#Finding%20a%20secret%20button)
+* [Door lock](#Door%20Lock)
+## Guard dialogue
+You can convince the guard, either by a persuasion, or a strength check to let you into the tavern. It sets a flag `PTM_TechSkillcheck_GuardPersuasionSuccess`, which triggers an Osiris script `GuardPersuasionButtonUnlock`, that utilizes `PROC_ItemUnlockAndOpen` to unlock the door and open it. After either success or failure it also sets a flag `PTM_TechSkillcheck_GuardAfterDialogue`, which prevents dialogue from repeating and instead plays just a different greeting.
+
+## Pickpocketing 
+The guard has a key to the tavern in his inventory which can be pickpocketed from him.
+
+## Finding a secret button
+On the right side of the tavern there is a hidden button that can be discovered by walking near it and passing a perception check. Clicking it triggers a condition in Osiris script named 
+The hiding of a button, skillcheck and the 'discovery shimmer' is handled via Constellation Config named `InvisibleButtonConfig`.
+
+## Door lock
+On the spawn there is an Event Trigger which locks the door and then teleports out of the map, so it can't be retriggered
